@@ -36,3 +36,23 @@ const referencia = document.querySelector("h3");
 
 //insertamos el titulo antes de la referencia
 parentElement.insertBefore(titulo, referencia);
+
+//************************************************************** */
+/**
+ * Otras formas de agregar elementos
+ * outerHTML imprimimos todo el html del div
+ */
+const textoHtml = parentElement.outerHTML;
+console.info(textoHtml);
+
+//innerHtml imprime el contenido interno del elemento de referencia
+const onlyText = parentElement.innerHTML;
+console.info(onlyText);
+
+//*********************************************************** */
+/**
+ *Eliminando un nodo (eliminando un input)
+ */
+
+const nodoInputAEliminar = parentElement.querySelector("input");
+parentElement.removeChild(nodoInputAEliminar);
